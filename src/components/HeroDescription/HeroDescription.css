@@ -1,0 +1,17 @@
+h2 {
+  font-family: serif;
+  font-size: 50px;
+}
+
+.container-hero-description {
+  margin-top: 50px;
+}
+
+.description-row {
+  margin-top: 25px;
+}
+
+.description-row .container-text p {
+  font-family: sans-serif;
+  color: #76767f;
+}
