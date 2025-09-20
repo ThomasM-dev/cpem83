@@ -1,15 +1,15 @@
-import Image from "react-bootstrap/Image";
+import { CImage } from "@coreui/react";
 import institution_image from "../../assets/cpem83-taqui-1.jpg";
 import "./HeroBanner.css";
 
 const HeroBanner = () => {
   return (
     <div className="hero-banner">
-      <Image
+      <CImage
         src={institution_image}
         fluid
         className="hero-image"
-        alt="Imagen de la institucion educativa"
+        alt="Imagen de la institución educativa"
       />
       <div className="hero-text">
         <h1>

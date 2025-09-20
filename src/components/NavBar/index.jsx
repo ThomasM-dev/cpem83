@@ -1,54 +1,84 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import logo from "../../assets/logo_cpem.png";
+import React from "react";
+import {
+  CContainer,
+  CNavbar,
+  CNavbarBrand,
+  CNavbarNav,
+  CNavbarToggler,
+  CNavItem,
+  CNavLink,
+  CCollapse,
+} from "@coreui/react";
+import "@coreui/coreui/dist/css/coreui.min.css";
 import "./NavBar.css";
+import { LuUser } from "react-icons/lu";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoCartOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="nav-dimensions">
-      <Container className="d-flex align-items-center justify-content-between px-0">
-        <div className="logo-container">
-          <Navbar.Brand href="#home">
-            <img className="logo" src={logo} alt="Logo Cpem N°83" />
-          </Navbar.Brand>
-        </div>
+    <CNavbar expand="lg" className="navbar-bg p-2">
+      <CContainer fluid>
+        <CNavbarBrand>
+          <img className="logoSit" src="/logo_cpem.png" alt="Logo del Sitio" />
+        </CNavbarBrand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <CNavbarToggler aria-label="Abrir menú de navegación">
+          <HiMenuAlt3 fontSize={25} />
+        </CNavbarToggler>
 
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="d-flex justify-content-between w-100"
-        >
-          <Nav className="nav-links d-flex justify-content-center">
-            <Nav.Link className="text-dark mx-2" href="#home">
-              Home
-            </Nav.Link>
-            <Nav.Link className="text-dark mx-2" href="#features">
-              About
-            </Nav.Link>
-            <Nav.Link className="text-dark mx-2" href="#pricing">
-              Academics
-            </Nav.Link>
-            <Nav.Link className="text-dark mx-2" href="#pricing">
-              Activities
-            </Nav.Link>
-          </Nav>
+        <CCollapse className="navbar-collapse">
+          <CNavbarNav className="custom-nav">
+            <CNavItem>
+              <CNavLink as={Link} to="/" className="nav-link-custom">
+                Inicio
+              </CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink as={Link} to="/Catalogo" className="nav-link-custom">
+                Catálogo
+              </CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink
+                as={Link}
+                to="/Preguntas-Frecuentes"
+                className="nav-link-custom"
+              >
+                Preguntas Frecuentes
+              </CNavLink>
+            </CNavItem>
+          </CNavbarNav>
 
-          <div className="container-socialNet d-flex justify-content-end">
-            <a
-              href="https://www.facebook.com/cpem.taquimilan.2025"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bi bi-facebook mx-2"></i>
-            </a>
-
-            <i className="bi bi-instagram mx-2"></i>
+          <div className="profile">
+            <CNavItem>
+              <CNavLink
+                as={Link}
+                to="/Carrito"
+                className="nav-link-custom cart-link"
+                title="Ver carrito"
+              >
+                <div className="cart-container">
+                  <IoCartOutline className="icon" />
+                  <span className="cart-counter">0</span>
+                </div>
+                <span>Carrito</span>
+              </CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink
+                className="nav-link-custom account-link"
+                title="Mi cuenta"
+              >
+                <LuUser className="icon" />
+                <span>Mi cuenta</span>
+              </CNavLink>
+            </CNavItem>
           </div>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </CCollapse>
+      </CContainer>
+    </CNavbar>
   );
 };
 
