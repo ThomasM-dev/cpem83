@@ -6,7 +6,7 @@ const NavBar = () => {
       <div className="container-fluid container-xl position-relative">
         <div className="top-row d-flex align-items-center justify-content-between">
           <a href="index.html" className="logo d-flex align-items-center">
-            <h1 className="sitename">LeadPage</h1>
+            <img className="sitlog" src="/logo_cpem.png" alt="Logo de la institucion" />
           </a>
 
           <div className="d-flex align-items-center">

@@ -18,12 +18,10 @@ const HeroBanner = () => {
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
               <h1 data-aos="fade-up" data-aos-delay="100">
-                Transform Your Vision Into Reality
+                CPEM 83 Taquimilán
               </h1>
               <p data-aos="fade-up" data-aos-delay="200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+                Es un establecimiento educativo rural de gestión pública ubicado en el Departamento de Ñorquin de la Provincia de Neuquén. La institución educativa “C.P.E.M. 83” brinda servicios educativos de gestión estatal en la modalidad de educación común en el nivel secundario.
               </p>
               <div
                 className="hero-buttons"
