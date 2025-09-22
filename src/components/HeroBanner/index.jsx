@@ -1,4 +1,4 @@
-import institution_image from "../../assets/cpem83-taqui-1.jpg";
+import institution_img from "../../assets/institucion_cpem.webp";
 import "./HeroBanner.css";
 
 const HeroBanner = () => {
@@ -7,7 +7,7 @@ const HeroBanner = () => {
       <div className="image-background">
         <img
           className="institution-image"
-          src={institution_image}
+          src={institution_img}
           alt="Institución educativa Cpem N°83"
         />
         <div className="image-overlay"></div>
