@@ -15,14 +15,13 @@ const NavBar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Limpieza del evento al desmontar
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header
+    <div
       id="header"
       className={`header fixed-top ${scrolled ? "solid" : ""}`}
     >
@@ -42,6 +41,12 @@ const NavBar = () => {
                 className="facebook"
               >
                 <i className="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="instagram">
+                <i class="bi bi-instagram"></i>
               </a>
             </div>
           </div>
@@ -74,7 +79,7 @@ const NavBar = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

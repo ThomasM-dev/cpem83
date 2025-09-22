@@ -40,10 +40,6 @@
 }
 
 
-:root {
-  scroll-behavior: smooth;
-}
-
 
 body {
   color: var(--default-color);
@@ -51,7 +47,7 @@ body {
   font-family: var(--default-font);
 }
 
-a {
+.nav-menu a {
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
