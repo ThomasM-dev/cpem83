@@ -105,7 +105,7 @@
 
 .hero .hero-buttons .btn.btn-outline {
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.8); /* blanco semi-transparente */
+  color: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
