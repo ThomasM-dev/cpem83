@@ -1,4 +1,5 @@
 import institution_img from "../../assets/institucion_cpem.webp";
+import { motion } from "framer-motion";
 import "./HeroBanner.css";
 
 const HeroBanner = () => {
@@ -17,12 +18,24 @@ const HeroBanner = () => {
         <div className="container position-relative">
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
-              <h1 data-aos="fade-up" data-aos-delay="100">
+              <motion.h1
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              >
                 CPEM 83 Taquimilán
-              </h1>
-              <p data-aos="fade-up" data-aos-delay="200">
-                Es un establecimiento educativo rural de gestión pública ubicado en el Departamento de Ñorquin de la Provincia de Neuquén. La institución educativa “C.P.E.M. 83” brinda servicios educativos de gestión estatal en la modalidad de educación común en el nivel secundario.
-              </p>
+              </motion.h1>
+              <motion.p
+                initial={{ y: 50, opacity: 0 }} 
+                animate={{ y: 0, opacity: 1 }} 
+                transition={{ duration: 1, delay: 0.2, ease: "easeOut" }} 
+              >
+                Es un establecimiento educativo rural de gestión pública ubicado
+                en el Departamento de Ñorquin de la Provincia de Neuquén. La
+                institución educativa “C.P.E.M. 83” brinda servicios educativos
+                de gestión estatal en la modalidad de educación común en el
+                nivel secundario.
+              </motion.p>
               <div
                 className="hero-buttons"
                 data-aos="fade-up"
