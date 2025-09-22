@@ -1,15 +1,14 @@
 import "./HeroDescription.css";
-import { CContainer, CRow, CCol } from "@coreui/react";
 
 const HeroDescription = () => {
   return (
-    <CContainer className="container-hero-description">
+    <div className="container container-hero-description">
       <h2>
         El aprendizaje comienza <br />
         con nosotros
       </h2>
-      <CRow className="description-row">
-        <CCol md={6} className="container-text">
+      <div className="row description-row">
+        <div className="col-md-6 container-text">
           <p>
             En nuestra Institución, ofrecemos entornos de apoyo e inspiración
             para que jóvenes aprendan y crezcan con nosotros. También contamos
@@ -18,8 +17,8 @@ const HeroDescription = () => {
             Nos esforzamos por formar pensadores seguros y creativos, y buscamos
             brindar una educación verdaderamente relevante para su futuro.
           </p>
-        </CCol>
-        <CCol md={6} className="container-text">
+        </div>
+        <div className="col-md-6 container-text">
           <p>
             Somos una escuela rural de aprendizaje continuo que contamos con un
             proyecto en conjunto con el CFP 20 de Chos Malal, nos brinda una
@@ -29,9 +28,9 @@ const HeroDescription = () => {
             habilidades prácticas que les permitirán avanzar en el sector al que
             se dediquen.
           </p>
-        </CCol>
-      </CRow>
-    </CContainer>
+        </div>
+      </div>
+    </div>
   );
 };
 
