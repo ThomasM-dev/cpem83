@@ -87,7 +87,7 @@ const Footer = () => {
                   <i className="bi bi-telephone"></i>
                 </div>
                 <div className="contact-info">
-                  <p>+1 (555) 987-6543</p>
+                  <p>+54 2942466730</p>
                 </div>
               </div>
 
@@ -96,12 +96,12 @@ const Footer = () => {
                   <i className="bi bi-envelope"></i>
                 </div>
                 <div className="contact-info">
-                  <p>contact@example.com</p>
+                  <p>cpem083@neuquen.edu.ar</p>
                 </div>
               </div>
 
               <div className="social-links">
-                <a href="#"><i className="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/cpem.taquimilan.2025" target="_blank"><i className="bi bi-facebook"></i></a>
                 <a href="#"><i className="bi bi-twitter-x"></i></a>
                 <a href="#"><i className="bi bi-linkedin"></i></a>
                 <a href="#"><i className="bi bi-youtube"></i></a>
