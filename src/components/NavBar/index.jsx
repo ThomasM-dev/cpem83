@@ -72,7 +72,7 @@ const NavBar = () => {
                 <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#pricing">Pricing</a>
+                <a href="#pricing">Contacto</a>
               </li>
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
