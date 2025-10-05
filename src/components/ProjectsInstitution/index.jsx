@@ -1,7 +1,7 @@
 import "./ProjectsInstitution.css";
 const ProjectsInstitution = () => {
   return (
-    <section id="portfolio" className="portfolio section">
+    <section id="portfolio" className="portfolio section mb-5">
       <div className="container section-title" data-aos="fade-up">
         <h2>Proyectos Escolares</h2>
         <p>
@@ -10,7 +10,7 @@ const ProjectsInstitution = () => {
         </p>
       </div>
 
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
+      <div className="container mt-5 " data-aos="fade-up" data-aos-delay="100">
         <div
           className="isotope-layout"
           data-default-filter="*"
@@ -18,23 +18,7 @@ const ProjectsInstitution = () => {
           data-sort="original-order"
         >
           <div
-            className="portfolio-filters-wrapper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <ul className="portfolio-filters isotope-filters">
-              <li data-filter="*" className="filter-active">
-                All Projects
-              </li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-web">Web Design</li>
-              <li data-filter=".filter-print">Print Design</li>
-              <li data-filter=".filter-motion">Motion</li>
-            </ul>
-          </div>
-
-          <div
-            className="row gy-4 portfolio-grid isotope-container"
+            className="row gy-5 portfolio-grid container"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -73,7 +57,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 2 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div className="portfolio-card">
                 <div className="image-container">
@@ -109,7 +92,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 3 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
               <div className="portfolio-card">
                 <div className="image-container">
@@ -145,7 +127,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 4 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
               <div className="portfolio-card">
                 <div className="image-container">
@@ -181,7 +162,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 5 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div className="portfolio-card">
                 <div className="image-container">
@@ -217,7 +197,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 6 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div className="portfolio-card">
                 <div className="image-container">
@@ -253,7 +232,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 7 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
               <div className="portfolio-card">
                 <div className="image-container">
@@ -289,7 +267,6 @@ const ProjectsInstitution = () => {
               </div>
             </div>
 
-            {/* Portfolio Item 8 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
               <div className="portfolio-card">
                 <div className="image-container">
