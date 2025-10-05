@@ -2,6 +2,11 @@ import "./ProjectsInstitution.css";
 import projects from "./projectsData";
 
 const ProjectsInstitution = () => {
+
+  const handleClickProject = (title) => {
+    console.log("Proyecto clickeado:", title);
+  }
+  
   return (
     <section id="portfolio" className="portfolio section mb-5">
       <div className="container section-title" data-aos="fade-up">
@@ -22,7 +27,7 @@ const ProjectsInstitution = () => {
                         <a href={project.image} className="glightbox zoom-link" title={project.zoomTitle}>
                           <i className="bi bi-zoom-in"></i>
                         </a>
-                        <button className="button-detais-projects">
+                        <button className="button-detais-projects"   onClick={() => handleClickProject(project.title)}>
                           <i className="bi bi-arrow-right"></i>
                         </button>
                       </div>
