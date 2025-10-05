@@ -22,9 +22,9 @@ const ProjectsInstitution = () => {
                         <a href={project.image} className="glightbox zoom-link" title={project.zoomTitle}>
                           <i className="bi bi-zoom-in"></i>
                         </a>
-                        <a href={project.detailsLink} className="details-link" title="View Project Details">
+                        <button className="button-detais-projects">
                           <i className="bi bi-arrow-right"></i>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
