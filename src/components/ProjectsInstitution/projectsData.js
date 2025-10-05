@@ -2,9 +2,9 @@
 const projects = [
   {
     id: 1,
-    title: "Brand Identity",
-    description: "Corporate branding and visual identity system",
-    image: "assets/img/portfolio/portfolio-3.webp",
+    title: "Taller de Ajedrez Escolar",
+    description: "El Taller de Ajedrez Escolar del CPEM N° 83 de Taquimilán, iniciado en 2018, es una actividad extracurricular que fomenta el desarrollo cognitivo y la integración de los estudiantes.",
+    image: "https://www.neuquen.edu.ar/wp-content/uploads/2025/07/Ajedrez-Taquimilan-1-2-1-1024x909.jpg",
     alt: "Brand Identity",
     category: "branding",
     zoomTitle: "Brand Identity Project",
